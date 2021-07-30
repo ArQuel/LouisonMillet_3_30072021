@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "mappings": "AAqCE,AAAA,EAAE,AAAA,CACA,KAAK,CClCO,OAAO,CDmCpB",
+    "sources": [
+        "../../Style/main.scss",
+        "../../Style/abstracts/_variables.scss",
+        "../../Style/abstracts/_functions.scss",
+        "../../Style/abstracts/_mixins.scss",
+        "../../Style/vendors/_normalize.scss",
+        "../../Style/base/_base.scss",
+        "../../Style/base/_fonts.scss",
+        "../../Style/base/_typography.scss",
+        "../../Style/base/_helpers.scss",
+        "../../Style/layout/_header.scss",
+        "../../Style/layout/_footer.scss",
+        "../../Style/components/_button.scss",
+        "../../Style/pages/_home.scss",
+        "../../Style/themes/_default.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
