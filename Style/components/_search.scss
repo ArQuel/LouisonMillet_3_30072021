@@ -1,0 +1,26 @@
+.fa-map-marker-alt{
+    margin-left: 100px;
+    color: black;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    height: 50px;
+    align-items: center;
+}
+
+.search_bar{
+    background-color: #eaeaea;
+    border: none;
+    padding: 14px 14px 14px 14px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.search_bar:focus{
+    border-color: black;
+}
