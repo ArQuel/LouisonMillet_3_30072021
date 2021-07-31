@@ -11,6 +11,17 @@ header {
   justify-content: center;
 }
 
+.button {
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 55px;
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 45px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
 .logo {
   width: 165px;
   margin-top: 40px;
@@ -18,10 +29,10 @@ header {
 }
 
 .fa-map-marker-alt {
-  margin-left: 100px;
+  margin-left: 65px;
+  width: 10%;
   color: black;
   padding-bottom: 5px;
-  padding-right: 5px;
 }
 
 .search {
@@ -30,17 +41,38 @@ header {
   background-color: #eaeaea;
   height: 50px;
   align-items: center;
+  width: 100%;
 }
 
 .search_bar {
   background-color: #eaeaea;
   border: none;
-  padding: 14px 14px 14px 14px;
   font-size: 18px;
-  width: 100%;
+  width: 50%;
 }
 
 .search_bar:focus {
   border-color: black;
+}
+
+.titres_accueil {
+  font-family: 'Roboto', cursive;
+  display: flex;
+  background-color: #f6f6f6;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.reservez {
+  margin-top: 20px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.decouvrez {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */
