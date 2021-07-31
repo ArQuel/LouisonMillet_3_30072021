@@ -1,3 +1,32 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+}
+
+footer h1{
+    font-family: 'Shrikhand';
+    padding: 20px 20px 10px 20px;
+    font-size: 20px;
+    color: white;
+}
+
+footer p{
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+footer i{
+    width: 5%;
+}
+
+.fa-utensils{
+    color: white;
+    padding-right: 5px;
+}
+
+.fa-hands-helping{
+    color: white;
+    padding-right: 5px;
+}
