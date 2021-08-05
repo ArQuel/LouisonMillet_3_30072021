@@ -12,6 +12,17 @@ header {
   justify-content: center;
 }
 
+.logo {
+  width: 165px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.fa-arrow-left {
+  font-size: 25px;
+  padding-top: 20px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -23,7 +34,7 @@ footer h1 {
   padding: 20px 20px 10px 20px;
   font-size: 20px;
   color: white;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 footer p {
@@ -71,12 +82,6 @@ footer i {
   width: calc(100% - 150px);
   text-align: center;
   align-self: center;
-}
-
-.logo {
-  width: 165px;
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 .fa-map-marker-alt {
@@ -261,10 +266,26 @@ footer i {
   margin-top: 13px;
   padding-left: 10px;
   padding-top: 15px;
-  padding-right: 20px;
+  padding-right: 15px;
   padding-bottom: 12px;
   background-color: white;
   border-radius: 20px;
   width: calc(100% - 30px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu_alf_card h3, .menu_alf_card h4 {
+  width: 90%;
+}
+
+.menu_alf_card h4 {
+  font-weight: 400;
+}
+
+.menu_alf p {
+  width: 10%;
+  font-weight: bold;
+  font-size: medium;
 }
 /*# sourceMappingURL=main.css.map */
