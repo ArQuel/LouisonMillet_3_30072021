@@ -6,6 +6,7 @@
 header{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .logo{
@@ -15,6 +16,8 @@ header{
 }
 
 .fa-arrow-left{
+    position: absolute;
+    left: 25px;
     font-size: 25px;
     padding-top: 20px;
 }

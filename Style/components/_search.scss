@@ -18,9 +18,30 @@
     background-color: #eaeaea;
     border: none;
     font-size: 18px;
-    width: 50%;
+    width: 60%;
 }
 
 .search_bar:focus{
-    border-color: black;
+    outline: auto 0px;
 }
+
+.search_bar::placeholder{
+    font-weight: 500;
+    color: black;
+}
+
+// Supprimer la croix de recherche dans Chrome
+
+input[type="search"]::-webkit-search-cancel-button {
+     display: none; 
+    }
+
+// Supprimer la croix de recherche dans IE
+
+input[type=search]::-ms-clear {
+     display: none; width : 0; height: 0; 
+    }
+
+input[type=search]::-ms-reveal {
+     display: none; width : 0; height: 0; 
+    }

@@ -37,6 +37,16 @@
     width: calc(100% - 30px);
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu_alf_card span{
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.description_alf{
+    width: 90%;
 }
 
 .menu_alf_card h3, .menu_alf_card h4{
@@ -45,6 +55,7 @@
 
 .menu_alf_card h4{
     font-weight: 400;
+    font-size: 15px;
 }
 
 .menu_alf p{
