@@ -4,6 +4,10 @@
   font-family: 'Roboto', cursive;
 }
 
+body {
+  background-color: white;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -429,18 +433,23 @@ input[type=search]::-ms-reveal {
 }
 
 .lds-ring {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  margin-left: 40%;
-  margin-top: 65%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  height: 0;
+  z-index: -1;
+  animation: appear 3s ease-out;
 }
 
 .lds-ring div {
   position: absolute;
   width: 64px;
   height: 64px;
-  border: 8px solid #9356DC;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
+  border: 10px solid #9356DC;
   border-radius: 50%;
   animation: loader 1.2s infinite;
   border-color: #9356DC transparent transparent transparent;
@@ -464,6 +473,17 @@ input[type=search]::-ms-reveal {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes appear {
+  0%, 50% {
+    height: 100%;
+    z-index: 1000;
+  }
+  50%, 100% {
+    height: 0;
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=main.css.map */
