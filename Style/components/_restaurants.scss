@@ -64,10 +64,34 @@
 }
 
 .cards_restaurant i{
+    color: $secondary-color;
     font-size: xx-large;
     padding-right: 30px;
-    padding-bottom: 13px;
-    font-weight: 100;
+    transition: 1s;
+}
+
+.cards_restaurant i:active{
+    animation: heart-apear 1s;
+}
+
+.fas{
+    position: absolute;
+    right: 0px;
+    bottom: 27px;
+    visibility: hidden;
+}
+
+@keyframes heart-apear{
+    0%{
+        .fas{
+            visibility: hidden;
+        }
+    }
+    100%{
+        .fas{
+            visibility: visible;
+        }
+    }
 }
 
 .card_restaurant img {
