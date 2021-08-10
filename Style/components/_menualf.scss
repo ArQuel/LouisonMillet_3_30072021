@@ -38,40 +38,12 @@
     width: calc(100% - 30px);
     display: flex;
     justify-content: space-between;
-    position: relative;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    
 }
 
-    .menu_alf_card .confirmation{
-        background-color: $tertiaire-color;
-        margin: -1rem -5rem -1rem 1rem;
-        width: 4rem;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        transition-duration: 0.5s
-    }
- 
-
-
-// .green_card{
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     right: -100px;
-//     width: 40%;
-//     background-color: rgb(177, 250, 177);
-// }
-
-@keyframes selected_card{
-    0%{
-        width: calc(100% - 30px);
-    }
-    100%{
-        :active{
-            width: 30%;
-        }
-    }
-}
 
 .menu_alf_card h3{
     text-overflow: ellipsis;
@@ -150,4 +122,10 @@
     width: 10%;
     font-weight: bold;
     font-size: medium;
+}
+
+
+
+.menu_icone{
+    transform: scale(0);
 }

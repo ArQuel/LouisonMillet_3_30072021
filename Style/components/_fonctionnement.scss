@@ -10,9 +10,11 @@
     padding-left: 45px;
     padding-right: 15px;
     width: calc(100% - 60px);
+    
 }
 
 .card_fonctionnement{
+    cursor: pointer;
     display: flex;
     font-size: 20px;
     border: none;
@@ -22,6 +24,9 @@
     padding: 25px 25px 25px 0px;
     background-color: #f6f6f6;
     align-items: center;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         3px 3px 10px 0px rgba(50, 50, 50, 0.75);
 }
 
 .cards_fonctionnement p{

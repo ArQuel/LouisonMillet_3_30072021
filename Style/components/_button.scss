@@ -9,6 +9,10 @@
     background-image: linear-gradient($secondary-color, $primary-color);
     width: calc(100% - 150px);
     text-align: center;
+    border: none;
+    -webkit-box-shadow: 3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         3px 3px 14px 0px rgba(50, 50, 50, 0.75);
 }
 
 .button_alf{
@@ -16,11 +20,31 @@
     color: white;
     font-size: 18px;
     margin-bottom: 80px;
-    border: 1px solid;
+    border: none;
     padding: 20px;
     border-radius: 45px;
     background-image: linear-gradient($secondary-color, $primary-color);
     width: calc(100% - 150px);
     text-align: center;
     align-self: center;
+    -webkit-box-shadow: 3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+}
+
+.button_alf:hover{
+    background-image: linear-gradient(darken($secondary-color, 15%), darken($primary-color, 15%));
+
+    -webkit-box-shadow: 1px 1px 21px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 21px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 21px 0px rgba(50, 50, 50, 0.75);
+}
+
+.button:hover{
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(darken($secondary-color, 15%), darken($primary-color, 15%));
+    -webkit-box-shadow: 1px 1px 21px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 21px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 21px 0px rgba(50, 50, 50, 0.75);
 }

@@ -5,6 +5,7 @@
     padding-right: 20px;
     padding-bottom: 40px;
     background-color: #f6f6f6;
+    
 }
 
 .section_restaurants h1{
@@ -30,6 +31,10 @@
     width: 100%;
     background-color: white;
     margin-bottom: 20px;
+    -webkit-box-shadow: 3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+    
 }
 
 .card_restaurant img{
@@ -67,30 +72,26 @@
     color: $secondary-color;
     font-size: xx-large;
     padding-right: 30px;
-    transition: 1s;
 }
 
-.cards_restaurant i:active{
+.coeur_vide:hover{
+    cursor: pointer;
     animation: heart-apear 1s;
+    font-weight: bolder;
 }
 
-.fas{
-    position: absolute;
-    right: 0px;
-    bottom: 27px;
-    visibility: hidden;
-}
 
 @keyframes heart-apear{
     0%{
-        .fas{
-            visibility: hidden;
-        }
+            transform: scale(1);
     }
+
+    40%{
+            transform: scale(1.5)
+    }
+    
     100%{
-        .fas{
-            visibility: visible;
-        }
+            transform: scale(1);
     }
 }
 

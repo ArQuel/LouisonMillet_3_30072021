@@ -78,6 +78,8 @@ footer i {
   background-image: linear-gradient(#FF79DA, #9356DC);
   width: calc(100% - 150px);
   text-align: center;
+  border: none;
+  box-shadow: 3px 3px 14px 0px rgba(50, 50, 50, 0.75);
 }
 
 .button_alf {
@@ -85,13 +87,26 @@ footer i {
   color: white;
   font-size: 18px;
   margin-bottom: 80px;
-  border: 1px solid;
+  border: none;
   padding: 20px;
   border-radius: 45px;
   background-image: linear-gradient(#FF79DA, #9356DC);
   width: calc(100% - 150px);
   text-align: center;
   align-self: center;
+  box-shadow: 3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+}
+
+.button_alf:hover {
+  background-image: linear-gradient(#ff2dc5, #6c27be);
+  box-shadow: 1px 1px 21px 0px rgba(50, 50, 50, 0.75);
+}
+
+.button:hover {
+  border: none;
+  cursor: pointer;
+  background-image: linear-gradient(#ff2dc5, #6c27be);
+  box-shadow: 1px 1px 21px 0px rgba(50, 50, 50, 0.75);
 }
 
 .fa-map-marker-alt {
@@ -179,6 +194,7 @@ input[type=search]::-ms-reveal {
 }
 
 .card_fonctionnement {
+  cursor: pointer;
   display: flex;
   font-size: 20px;
   border: none;
@@ -188,6 +204,7 @@ input[type=search]::-ms-reveal {
   padding: 25px 25px 25px 0px;
   background-color: #f6f6f6;
   align-items: center;
+  box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
 }
 
 .cards_fonctionnement p {
@@ -261,6 +278,7 @@ input[type=search]::-ms-reveal {
   width: 100%;
   background-color: white;
   margin-bottom: 20px;
+  box-shadow: 3px 3px 14px 0px rgba(50, 50, 50, 0.75);
 }
 
 .card_restaurant img {
@@ -298,30 +316,23 @@ input[type=search]::-ms-reveal {
   color: #FF79DA;
   font-size: xx-large;
   padding-right: 30px;
-  transition: 1s;
 }
 
-.cards_restaurant i:active {
+.coeur_vide:hover {
+  cursor: pointer;
   animation: heart-apear 1s;
-}
-
-.fas {
-  position: absolute;
-  right: 0px;
-  bottom: 27px;
-  visibility: hidden;
+  font-weight: bolder;
 }
 
 @keyframes heart-apear {
   0% {
-    .fas {
-      visibility: hidden;
-    }
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.5);
   }
   100% {
-    .fas {
-      visibility: visible;
-    }
+    transform: scale(1);
   }
 }
 
@@ -387,28 +398,7 @@ input[type=search]::-ms-reveal {
   width: calc(100% - 30px);
   display: flex;
   justify-content: space-between;
-  position: relative;
-}
-
-.menu_alf_card .confirmation {
-  background-color: #99E2D0;
-  margin: -1rem -5rem -1rem 1rem;
-  width: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 0.5s;
-}
-
-@keyframes selected_card {
-  0% {
-    width: calc(100% - 30px);
-  }
-  100% {
-    :active {
-      width: 30%;
-    }
-  }
+  box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
 }
 
 .menu_alf_card h3 {
@@ -486,6 +476,10 @@ input[type=search]::-ms-reveal {
   width: 10%;
   font-weight: bold;
   font-size: medium;
+}
+
+.menu_icone {
+  transform: scale(0);
 }
 
 .lds-ring {
