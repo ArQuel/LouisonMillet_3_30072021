@@ -388,6 +388,8 @@ input[type=search]::-ms-reveal {
 }
 
 .menu_alf_card {
+  position: relative;
+  cursor: pointer;
   margin-top: 13px;
   padding-left: 10px;
   padding-top: 15px;
@@ -397,12 +399,43 @@ input[type=search]::-ms-reveal {
   border-radius: 20px;
   width: calc(100% - 30px);
   display: flex;
-  justify-content: space-between;
   box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+  overflow: hidden;
 }
 
-.menu_alf_card h3 {
-  text-overflow: ellipsis;
+.confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 10%;
+  height: 50%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  padding: 20px;
+  right: -50px;
+  top: 0;
+  opacity: 0;
+  transition: transform 500ms ease-in-out;
+}
+
+.confirmation .fa-check-circle {
+  color: #fff;
+  transition: transform 1s ease-in-out;
+}
+
+.menu_alf_card:hover .confirmation {
+  opacity: 1;
+  transform: translate(-50px);
+}
+
+.menu_alf_card:hover .fa-check-circle {
+  transform: rotate(360deg);
+}
+
+.fa-check-circle {
+  font-size: 25px;
 }
 
 .menu_alf_card:nth-child(3) {
@@ -476,10 +509,6 @@ input[type=search]::-ms-reveal {
   width: 10%;
   font-weight: bold;
   font-size: medium;
-}
-
-.menu_icone {
-  transform: scale(0);
 }
 
 .lds-ring {

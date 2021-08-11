@@ -28,6 +28,8 @@
 }
 
 .menu_alf_card{
+    position: relative;
+    cursor: pointer;
     margin-top: 13px;
     padding-left: 10px;
     padding-top: 15px;
@@ -37,16 +39,45 @@
     border-radius: 20px;
     width: calc(100% - 30px);
     display: flex;
-    justify-content: space-between;
     -webkit-box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    3px 3px 10px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         3px 3px 10px 0px rgba(50, 50, 50, 0.75);
-    
+    overflow: hidden;
 }
 
+.confirmation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $tertiaire-color;
+    width: 10%;
+    height: 50%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: 20px;
+    right: -50px;
+    top: 0;
+    opacity: 0;
+    transition: transform 500ms ease-in-out;
+}
 
-.menu_alf_card h3{
-    text-overflow: ellipsis;
+.confirmation .fa-check-circle {
+color: #fff;
+transition: transform 1s ease-in-out;
+}
+
+.menu_alf_card:hover .confirmation{
+    opacity: 1;
+    transform: translate(-50px);
+}
+
+.menu_alf_card:hover .fa-check-circle{
+    transform: rotate(360deg);
+}
+
+.fa-check-circle{
+    font-size: 25px;
 }
 
 
@@ -125,7 +156,3 @@
 }
 
 
-
-.menu_icone{
-    transform: scale(0);
-}
