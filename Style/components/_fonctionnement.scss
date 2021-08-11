@@ -10,7 +10,23 @@
     padding-left: 45px;
     padding-right: 15px;
     width: calc(100% - 60px);
-    
+}
+
+@media (min-width: 1080px){
+   .section_fonctionnement{
+        margin-bottom: 100px;
+    }
+
+   .cards_fonctionnement{
+       display: flex;
+       flex-direction: row;
+   }
+   .section_fonctionnement h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 }
 
 .card_fonctionnement{
