@@ -104,14 +104,14 @@ footer i {
 }
 
 .button_alf:hover {
-  background-image: linear-gradient(#ff2dc5, #6c27be);
+  background-image: linear-gradient(#ff93e1, #bc95e9);
   box-shadow: 1px 1px 21px 0px rgba(50, 50, 50, 0.75);
 }
 
 .button:hover {
   border: none;
   cursor: pointer;
-  background-image: linear-gradient(#ff2dc5, #6c27be);
+  background-image: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 1px 1px 21px 0px rgba(50, 50, 50, 0.75);
 }
 
@@ -217,6 +217,10 @@ input[type=search]::-ms-reveal {
   .cards_fonctionnement {
     display: flex;
     flex-direction: row;
+  }
+  .card_fonctionnement {
+    flex: 1;
+    margin: 0px 20px;
   }
   .section_fonctionnement h1 {
     font-size: 40px;
@@ -363,15 +367,15 @@ input[type=search]::-ms-reveal {
   font-size: xx-large;
   padding-right: 30px;
   background: white;
-  background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .coeur_vide:hover {
   cursor: pointer;
   animation: heart-apear 1s;
   font-weight: bolder;
+  background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes heart-apear {
@@ -458,16 +462,16 @@ input[type=search]::-ms-reveal {
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  width: 10%;
+  width: 0;
   height: 50%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
-  padding: 20px;
-  right: -50px;
+  padding: 20px 0px;
+  right: 0px;
   top: 0;
-  opacity: 0;
-  transition: transform 500ms ease-in-out;
+  overflow: hidden;
+  transition: 500ms ease-in-out;
 }
 
 .confirmation .fa-check-circle {
@@ -476,8 +480,8 @@ input[type=search]::-ms-reveal {
 }
 
 .menu_alf_card:hover .confirmation {
-  opacity: 1;
-  transform: translate(-50px);
+  width: 10%;
+  padding: 20px;
 }
 
 .menu_alf_card:hover .fa-check-circle {
@@ -485,7 +489,8 @@ input[type=search]::-ms-reveal {
 }
 
 .menu_alf_card:hover .description_alf {
-  width: 67%;
+  width: calc(90% - 10% - 40px);
+  transition: 500ms ease-in-out;
 }
 
 .fa-check-circle {
@@ -514,6 +519,7 @@ input[type=search]::-ms-reveal {
 
 .description_alf {
   width: 90%;
+  transition: 500ms ease-in-out;
 }
 
 .menu_alf_card h3, .menu_alf_card h4 {

@@ -50,26 +50,26 @@
     justify-content: center;
     align-items: center;
     background-color: $tertiaire-color;
-    width: 10%;
+    width: 0;
     height: 50%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     position: absolute;
-    padding: 20px;
-    right: -50px;
+    padding: 20px 0px;
+    right: 0px;
     top: 0;
-    opacity: 0;
-    transition: transform 500ms ease-in-out;
+    overflow: hidden;
+    transition: 500ms ease-in-out;
 }
 
 .confirmation .fa-check-circle {
-color: #fff;
-transition: transform 1s ease-in-out;
+    color: #fff;
+    transition: transform 1s ease-in-out;
 }
 
 .menu_alf_card:hover .confirmation{
-    opacity: 1;
-    transform: translate(-50px);
+    width: 10%;
+    padding: 20px;
 }
 
 .menu_alf_card:hover .fa-check-circle{
@@ -78,7 +78,8 @@ transition: transform 1s ease-in-out;
 
 .menu_alf_card:hover{
     .description_alf{
-        width: 67%;
+        width: calc(90% - 10% - 40px);
+        transition: 500ms ease-in-out;
     }
 }
 
@@ -111,6 +112,7 @@ transition: transform 1s ease-in-out;
 
 .description_alf{
     width: 90%;
+    transition: 500ms ease-in-out;
 }
 
 .menu_alf_card h3, .menu_alf_card h4{
