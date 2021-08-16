@@ -1,29 +1,45 @@
-.section_restaurants{
+.section_restaurants {
     margin-top: 20px;
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
     background-color: #f6f6f6;
-    
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
 }
 
-.section_restaurants h1{
-    font-size: 26px;
-    margin-bottom: 40px;
-}
-
-.section_restaurants h2{
-    font-size: 20px;
-}
-
-.cards_restaurant{
+.cards_restaurant {
     display: flex;
     flex-direction: column;
     object-fit: cover;
+
+    i {
+        font-size: xx-large;
+        padding-right: 30px;
+        background: white;
+    }
+
+    .coeur_vide:hover {
+        cursor: pointer;
+        animation: heart-apear 1s;
+        font-weight: bolder;
+        background: -webkit-linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%);
+        background: -moz-linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%);
+        background: linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
-.card_restaurant{
+.card_restaurant {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -32,104 +48,77 @@
     background-color: white;
     margin-bottom: 20px;
     -webkit-box-shadow: 3px 3px 14px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    3px 3px 14px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+
+    img {
+        width: 100%;
+        border-radius: 25px 25px 0px 0px;
+        height: 175px;
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 22px;
+        padding: 10px 10px 0px 10px;
+        width: 75%;
+    }
+
+    p {
+        padding: 5px 10px 20px 10px;
+        font-size: 18px;
+        width: 75%;
+    }
+
+    .description {
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            width: 100%;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+
+    img {
+        position: relative;
+    }
+
+    span {
+        position: absolute;
+        background-color: $tertiaire-color;
+        top: 20px;
+        right: 20px;
+        padding: 8px;
+        border-radius: 10px;
+        color: darken($tertiaire-color, 50%);
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
 
-@media (min-width: 1080px){
-    .section_restaurants h1{
+@media (min-width: 1080px) {
+    .section_restaurants h1 {
         text-align: center;
         font-size: 40px;
     }
-    .cards_restaurant{
+
+    .cards_restaurant {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
 
     }
-    .card_restaurant{
+
+    .card_restaurant {
         width: 24%;
     }
 }
-
-.card_restaurant img{
-    width: 100%;
-    border-radius: 25px 25px 0px 0px;
-    height: 175px;
-    object-fit: cover;
-}
-
-.card_restaurant h2{
-    font-size: 22px;
-    padding: 10px 10px 0px 10px;
-}
-
-.card_restaurant p{
-    padding: 5px 10px 20px 10px;
-    font-size: 18px;
-}
-
-.card_restaurant h2,.card_restaurant p{
-    width: 75%;
-}
-
-.card_restaurant .description{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card_restaurant .description h2, .cards_restaurant .description p{
-    width: 100%;
-}
-
-.cards_restaurant i{
-    font-size: xx-large;
-    padding-right: 30px;
-    background: white;
-    
-}
-
-.coeur_vide:hover{
-    cursor: pointer;
-    animation: heart-apear 1s;
-    font-weight: bolder;
-    background: -webkit-linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%);
-    background: -moz-linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%);
-    background: linear-gradient(to bottom, $primary-color 0%, $secondary-color 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-@keyframes heart-apear{
-    0%{
-            transform: scale(1);
-    }
-
-    40%{
-            transform: scale(1.5)
-    }
-    
-    100%{
-            transform: scale(1);
-    }
-}
-
-.card_restaurant img {
-    position: relative;
-}
-
-.card_restaurant span{
-    position: absolute;
-    background-color: $tertiaire-color;
-    top: 20px;
-    right: 20px;
-    padding: 8px;
-    border-radius: 10px;
-    color: darken($tertiaire-color, 50%);
-    font-weight: bold;
-}
-
-
-

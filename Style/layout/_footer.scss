@@ -1,46 +1,48 @@
-footer{
+footer {
     display: flex;
     flex-direction: column;
     background-color: #353535;
+
+    h1 {
+        a {
+            font-family: 'Shrikhand';
+            padding: 20px 0px 10px 20px;
+            font-size: 20px;
+            color: white;
+            font-weight: 200;
+        }
+    }
+
+    p {
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    a {
+        color: white;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        text-decoration: none;
+    }
+
+    i {
+        width: 15px;
+    }
 }
 
-footer h1{
-    font-family: 'Shrikhand';
-    padding: 20px 20px 10px 20px;
-    font-size: 20px;
-    color: white;
-    font-weight: 200;
-}
-
-footer p{
-    color: white;
-    padding-left: 20px;
-    padding-bottom: 10px;
-}
-
-footer a{
-    color: white;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    text-decoration: none;
-}
-
-footer i{
-    width: 15px;
-}
-
-.fa-utensils{
-    color: white;
-    padding-right: 5px;
-}
-
-.fa-hands-helping{
+.fa-utensils {
     color: white;
     padding-right: 5px;
 }
 
-@media (min-width: 900px){
-    footer{
+.fa-hands-helping {
+    color: white;
+    padding-right: 5px;
+}
+
+@media (min-width: 900px) {
+    footer {
         text-align: center;
     }
 }

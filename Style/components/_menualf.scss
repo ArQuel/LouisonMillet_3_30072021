@@ -1,4 +1,4 @@
-.menu_alf{
+.menu_alf {
     display: flex;
     border-radius: 45px 45px 0px 0px;
     background-color: #f6f6f6;
@@ -6,28 +6,27 @@
     flex-direction: column;
     padding-right: 15px;
     padding-left: 15px;
+
+    h1 {
+        font-family: 'Shrikhand';
+        font-weight: 200;
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+
+    h2 {
+        font-family: 'Roboto', cursive;
+        font-weight: normal;
+        font-size: 18px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-left: 8px;
+        border-bottom: 2px solid $tertiaire-color;
+        align-self: flex-start;
+    }
 }
 
-.menu_alf h1 {
-    font-family: 'Shrikhand';
-    font-weight: 200;
-    padding-top : 30px;
-    padding-left: 10px;
-}
-
-.menu_alf h2{
-    font-family: 'Roboto', cursive;
-    font-weight: normal;
-    font-size: 18px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    margin-left: 8px;
-    border-bottom: 2px solid $tertiaire-color;
-    align-self: flex-start;
-    
-}
-
-.menu_alf_card{
+.menu_alf_card {
     position: relative;
     cursor: pointer;
     margin-top: 13px;
@@ -40,12 +39,33 @@
     width: calc(100% - 30px);
     display: flex;
     -webkit-box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    3px 3px 10px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.75);
     overflow: hidden;
+    animation: fade 1s ease-out;
+
+    span {
+        padding-top: 20px;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+
+    h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    h4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 15px;
+    }
 }
 
-.confirmation{
+.confirmation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,100 +80,67 @@
     top: 0;
     overflow: hidden;
     transition: 500ms ease-in-out;
+
+    .fa-check-circle {
+        color: #fff;
+        transition: transform 1s ease-in-out;
+    }
 }
 
-.confirmation .fa-check-circle {
-    color: #fff;
-    transition: transform 1s ease-in-out;
-}
-
-.menu_alf_card:hover .confirmation{
+.menu_alf_card:hover .confirmation {
     width: 10%;
     padding: 20px;
 }
 
-.menu_alf_card:hover .fa-check-circle{
+.menu_alf_card:hover .fa-check-circle {
     transform: rotate(360deg);
 }
 
-.menu_alf_card:hover{
-    .description_alf{
+.menu_alf_card:hover {
+    .description_alf {
         width: calc(90% - 10% - 40px);
         transition: 500ms ease-in-out;
     }
 }
 
-.fa-check-circle{
+.fa-check-circle {
     font-size: 25px;
 }
 
-
-.menu_alf_card{
-    animation: fade 1s ease-out;
-}
-
-
-@keyframes fade {
-    0% {
-      top: 50px;
-      opacity: 0;
-    }
-    
-    100% {
-      top: 0;
-      opacity: 1;
-    }
-  }
-
-.menu_alf_card span{
-    padding-top: 20px;
-    font-weight: bold;
-}
-
-.description_alf{
+.description_alf {
     width: 90%;
     transition: 500ms ease-in-out;
 }
 
-.menu_alf_card h3, .menu_alf_card h4{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
 
-.menu_alf_card h4{
-    font-weight: 400;
-    font-size: 15px;
-}
 
-.menu_alf_card span{
-    padding-left: 10px;
-}
-
-@media (min-width: 900px){
-    .menu_alf_cards{
+@media (min-width: 900px) {
+    .menu_alf_cards {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-     }
+    }
 
-     .menu_alf_card{
+    .menu_alf_card {
         flex-direction: row;
         width: 30%;
         height: 50px;
-     }
+    }
 
-     .menu_alf h1{
-         text-align: center;
-         font-size: 40px;
-     }
+    .menu_alf {
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
 
-     .menu_alf h2{
-         margin-left: 0px;
-         align-self: center;
-         font-size: x-large;
-         margin-top: 70px;
-         margin-bottom: 50px;
-     }
+        h2 {
+            margin-left: 0px;
+            align-self: center;
+            font-size: x-large;
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+
+    }
 }

@@ -1,4 +1,4 @@
-.button{
+.button {
     margin-top: 20px;
     color: white;
     font-size: 18px;
@@ -10,15 +10,10 @@
     width: calc(100% - 150px);
     text-align: center;
     border: none;
-    -webkit-box-shadow: 3px 3px 14px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    3px 3px 14px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+    @include bg-shadow
 }
 
-
-
-
-.button_alf{
+.button_alf {
     margin-top: 50px;
     color: white;
     font-size: 18px;
@@ -30,33 +25,28 @@
     width: calc(100% - 150px);
     text-align: center;
     align-self: center;
-    -webkit-box-shadow: 3px 3px 14px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    3px 3px 14px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         3px 3px 14px 0px rgba(50, 50, 50, 0.75);
+    @include bg-shadow
 }
 
-.button_alf:hover{
+.button_alf:hover {
+    cursor: pointer;
     background-image: linear-gradient(lighten($secondary-color, 5%), lighten($primary-color, 15%));
-
-    -webkit-box-shadow: 1px 1px 21px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    1px 1px 21px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         1px 1px 21px 0px rgba(50, 50, 50, 0.75);
+    @include bg-shadow-light
 }
 
-.button:hover{
+.button:hover {
     border: none;
     cursor: pointer;
     background-image: linear-gradient(lighten($secondary-color, 5%), lighten($primary-color, 5%));
-    -webkit-box-shadow: 1px 1px 21px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    1px 1px 21px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         1px 1px 21px 0px rgba(50, 50, 50, 0.75);
+    @include bg-shadow-light
 }
 
-@media (min-width: 600px){
-    .button{
+@media (min-width: 600px) {
+    .button {
         width: 200px;
     }
-    .button_alf{
+
+    .button_alf {
         width: 250px;
         margin-top: 150px;
         font-size: 25px;

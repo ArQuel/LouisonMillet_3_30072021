@@ -1,21 +1,16 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
-
-
-header{
+header {
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.logo{
+.logo {
     width: 165px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.fa-arrow-left{
+.fa-arrow-left {
     position: absolute;
     left: 25px;
     font-size: 25px;

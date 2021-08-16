@@ -1,11 +1,11 @@
-.fa-map-marker-alt{
+.fa-map-marker-alt {
     margin-left: 65px;
     width: 10%;
     color: black;
     padding-bottom: 5px;
 }
 
-.search{
+.search {
     display: flex;
     justify-content: center;
     background-color: #eaeaea;
@@ -14,18 +14,18 @@
     width: 100%;
 }
 
-.search_bar{
+.search_bar {
     background-color: #eaeaea;
     border: none;
     font-size: 18px;
     width: 60%;
 }
 
-.search_bar:focus{
+.search_bar:focus {
     outline: auto 0px;
 }
 
-.search_bar::placeholder{
+.search_bar::placeholder {
     font-weight: 500;
     color: black;
 }
@@ -33,15 +33,19 @@
 // Supprimer la croix de recherche dans Chrome
 
 input[type="search"]::-webkit-search-cancel-button {
-     display: none; 
-    }
+    display: none;
+}
 
 // Supprimer la croix de recherche dans IE
 
 input[type=search]::-ms-clear {
-     display: none; width : 0; height: 0; 
-    }
+    display: none;
+    width: 0;
+    height: 0;
+}
 
 input[type=search]::-ms-reveal {
-     display: none; width : 0; height: 0; 
-    }
+    display: none;
+    width: 0;
+    height: 0;
+}
